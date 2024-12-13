@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Teko:wght@300..700&display=swap');
+
+body {
+  background-color: #0B192C;
+  overflow: hidden;
+  text-align: center;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#animationWindow {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 15px;
+  /* animation: colorPipe 1.6s linear alternate-reverse infinite; */
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  color: white;
+}
+
+h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  margin-top: 15px;
+  color: white;
+  transform-origin: left bottom;
+  /* animation-name: rotateDownLeft 1.6s linear alternate-reverse; */
+  animation-name: rotate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+
+/* @keyframes colorPipe {
+	0% {
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+    color: red;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    color: blue;
+  }
+} */
+
